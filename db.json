@@ -15,6 +15,14 @@
       "category": "생활가전",
       "price": 200000,
       "id": 2
+    },
+    {
+      "title": "에어팟",
+      "postImg": "https://firebasestorage.googleapis.com/v0/b/carrotmarket-20c28.appspot.com/o/images%2F%E1%84%8B%E1%85%A6%E1%84%8B%E1%85%A5%E1%84%91%E1%85%A1%E1%86%BA.jpeg?alt=media&token=e5843593-e970-4070-b050-08741f303518",
+      "content": "비쌉니다 ! ",
+      "category": "디지털기기",
+      "price": 500000,
+      "id": 3
     }
   ],
   "comments": [

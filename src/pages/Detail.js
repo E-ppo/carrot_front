@@ -16,9 +16,11 @@ function Detail() {
   const postDetail = useSelector((state) => state.post.post);
   const postPrice = postDetail.price;
 
+  console.log(postDetail);
+
   // 금액 콤마(,) 찍어서 보여주기
   let carrotPrice = postPrice?.toLocaleString("ko-KR");
-  console.log(carrotPrice);
+  //console.log(carrotPrice);
 
   useEffect(() => {
     dispatch(carrotGetPost());

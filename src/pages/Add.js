@@ -19,7 +19,7 @@ function Add() {
   const content_ref = useRef();
   const [category, setCategory] = useState();
   const [imageSrc, setImageSrc] = useState(); // 프리뷰
-  const [enteredNum, setEnterdNum] = useState();
+  const [enteredNum, setEnterdNum] = useState(); // 금액 콤마
 
   const changeCategory = (e) => {
     setCategory(e.target.value);
@@ -64,7 +64,7 @@ function Add() {
   };
 
   // 콤마제거
-  const commaRemovePrice = enteredNum?.replace(/,/g, "");
+  const commaRemovePrice = enteredNum?.replace(/,/g, ""); // global 전역으로 , 제거
   let numberPrice = parseInt(commaRemovePrice);
 
   const upload = () => {
@@ -98,8 +98,14 @@ function Add() {
         <File>
           <label htmlFor="file">
             <IoIosCamera className="camera" />
+
+            <input
+              type="file"
+              id="file"
+              ref={fileInput}
+              onChange={selectFile}
+            />
           </label>
-          <input type="file" id="file" ref={fileInput} onChange={selectFile} />
           {imageSrc && <img src={imageSrc} alt="preview-img" />}
         </File>
 
